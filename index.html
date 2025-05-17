@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Меню кафе</title>
+<!-- Подключение стилей -->
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0); /* приятный градиентный фон */
+    color: #333;
+  }
+
+  header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .menu {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .dish {
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+  }
+
+  .dish:hover {
+    transform: scale(1.02);
+  }
+
+  .dish img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .dish-info {
+    padding: 15px;
+  }
+
+  .dish-title {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+  }
+
+  .dish-price {
+    font-weight: bold;
+    color: #d33;
+    margin-bottom: 10px;
+  }
+
+  .dish-ingredients {
+    font-size: 0.9em;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+
+<header>Меню кафе</header>
+
+<div class="menu">
+  <!-- Блюдо 1 -->
+  <div class="dish">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Блюдо 1" />
+    <div class="dish-info">
+      <div class="dish-title">Классический салат</div>
+      <div class="dish-price">150 ₽</div>
+      <div class="dish-ingredients">
+        Свежие овощи, оливковое масло, специи.
+      </div>
+    </div>
+  </div>
+
+  <!-- Блюдо 2 -->
+  <div class="dish">
+    <img src="https://images.unsplash.com/photo-1606788075761-1f147b6d0e0d?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Блюдо 2" />
+    <div class="dish-info">
+      <div class="dish-title">Пицца Маргарита</div>
+      <div class="dish-price">350 ₽</div>
+      <div class="dish-ingredients">
+        Тесто, помидоры, моцарелла, базилик.
+      </div>
+    </div>
+  </div>
+
+  <!-- Блюдо 3 -->
+  <div class="dish">
+    <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Блюдо 3" />
+    <div class="dish-info">
+      <div class="dish-title">Кофе эспрессо</div>
+      <div class="dish-price">120 ₽</div>
+      <div class="dish-ingredients">
+        Молотый кофе, горячая вода.
+      </div>
+    </div>
+  </div>
+
+  <!-- Добавляйте свои блюда по образцу -->
+</div>
+
+</body>
+</html>
