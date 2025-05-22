@@ -9,9 +9,8 @@
   body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    /* Используем насыщенный яркий фон с изображением или градиентом, вызывающим аппетит */
-    /* Можно заменить URL на изображение вкусной еды или фруктов */
-    background-image: url(images/фон меню кат.jpg');
+    /* Укажите путь к вашей картинке из папки images */
+    background-image: url('images/фон меню кат.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -19,7 +18,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    color: #fff; /* светлый текст для контраста */
+    color: #fff; /* Светлый текст для контраста */
   }
 
   /* Небольшая тень для читаемости текста на фоне */
@@ -61,6 +60,7 @@
 </head>
 <body>
 <h2>М Е Н Ю</h2>
+<!-- Вставьте название вашей картинки в url выше -->
 <button onclick="window.location.href='salads.html'">Салаты</button>
 <button onclick="window.location.href='main_dishes.html'">Основные блюда</button>
 <button onclick="window.location.href='drinks.html'">Напитки</button>
