@@ -5,44 +5,62 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Выберите раздел меню</title>
 <style>
+  /* Общие стили для тела страницы с ярким, аппетитным фоном */
   body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+    /* Используем насыщенный яркий фон с изображением или градиентом, вызывающим аппетит */
+    /* Можно заменить URL на изображение вкусной еды или фруктов */
+    background-image: url('https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    color: #fff; /* светлый текст для контраста */
+  }
+
+  /* Небольшая тень для читаемости текста на фоне */
+  body::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0, 0, 0, 0.4); /* затемнение фона для лучшей читаемости */
+    z-index: -1;
   }
 
   h2 {
     margin-bottom: 30px;
-    font-size: 2em;
-    color: #222;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
   }
 
+  /* Стиль для кнопок */
   button {
     display: block;
     width: 250px;
     padding: 15px;
     margin: 10px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     border: none;
-    border-radius: 10px;
-    background-color: #4CAF50;
-    color: white;
+    border-radius: 30px; /* более округлые кнопки */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
     cursor: pointer;
-    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
   }
 
   button:hover {
-    background-color: #45a049;
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
   }
 </style>
 </head>
 <body>
-<h2>МЕНЮ</h2>
+<h2>М Е Н Ю</h2>
 <button onclick="window.location.href='salads.html'">Салаты</button>
 <button onclick="window.location.href='main_dishes.html'">Основные блюда</button>
 <button onclick="window.location.href='drinks.html'">Напитки</button>
