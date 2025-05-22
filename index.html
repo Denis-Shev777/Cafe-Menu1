@@ -3,33 +3,53 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Меню кафе</title>
+<title>Добро пожаловать</title>
 <style>
+  /* Общие стили для всей страницы */
   body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* Используем тот же фон, что и у второй страницы */
+    background-image: url('images/фон меню кат.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    position: relative;
   }
-  a {
-    display: inline-block;
+
+  /* Для лучшей читаемости текста, можно добавить затемнение */
+  body::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0, 0, 0, 0.4); /* затемнение для читаемости */
+    z-index: -1;
+  }
+
+  /* Стиль для кнопки */
+  .btn {
     padding: 20px 40px;
-    font-size: 1.5em;
-    text-decoration: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 10px;
-    transition: background-color 0.3s;
+    font-size: 2em;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,0.8);
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
   }
-  a:hover {
-    background-color: #45a049;
+
+  .btn:hover {
+    background-color: rgba(255,255,255,1);
+    transform: scale(1.05);
   }
 </style>
 </head>
 <body>
-<a href="categories.html">Открыть меню</a>
+<!-- Кнопка "Открыть меню" -->
+<button class="btn" onclick="window.location.href='categories.html'">Открыть меню</button>
 </body>
 </html>
