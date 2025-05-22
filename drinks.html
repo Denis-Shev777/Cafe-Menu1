@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Меню - Напитки</title>
+<!-- Вставьте сюда ваши стили, аналогичные предыдущему -->
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+    color: #333;
+  }
+
+  header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    margin: 30px 20px 10px;
+    font-size: 1.8em;
+    color: #222;
+  }
+
+  .menu {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .dish {
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+  }
+
+  .dish:hover {
+    transform: scale(1.02);
+  }
+
+  .dish img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .dish-info {
+    padding: 15px;
+  }
+
+  .dish-title {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+  }
+
+  .dish-price {
+    font-weight: bold;
+    color: #d33;
+    margin-bottom: 10px;
+  }
+
+  .dish-ingredients {
+    font-size: 0.9em;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+<header>Меню - Напитки</header>
+
+<h2>Напитки</h2>
+<div class="menu" id="drinks">
+  <div class="dish">
+    <img src="images/Лимонад.jpg" alt="Лимонад" />
+    <div class="dish-info">
+      <div class="dish-title">Натуральный лимонад</div>
+      <div class="dish-price">5 евро</div>
+      <div class="dish-ingredients">
+        Лимон, тростниковый сахар, газ. вода, мята
+      </div>
+    </div>
+  </div>
+  <div class="dish">
+    <img src="images/Милкшейк.jpg" alt="Милкшейк" />
+    <div class="dish-info">
+      <div class="dish-title">Молочные милкшейки (на выбор)</div>
+      <div class="dish-price">5 евро</div>
+      <div class="dish-ingredients">
+        Мягкое мороженое, молоко, топпинг, взбитые сливки
+      </div>
+    </div>
+  </div>
+  <div class="dish">
+    <img src="images/Чай.jpg" alt="Чай" />
+    <div class="dish-info">
+      <div class="dish-title">Чай</div>
+      <div class="dish-price">2 евро</div>
+      <div class="dish-ingredients">
+        Чай
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
